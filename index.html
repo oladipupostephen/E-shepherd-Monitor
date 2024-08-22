@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GPS Tracker</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>E-Shepherding Tracker</h1>
+        <div id="map"></div>
+        <div class="coordinates">
+            <h3>Coordinates</h3>
+            <p><strong>Starting Position:</strong> <span id="start-position">-</span></p>
+            <p><strong>Current Position:</strong> <span id="current-position">-</span></p>
+            <p><strong>Distance from Start:</strong> <span id="distance">-</span></p>
+        </div>
+        <button id="start-button">Start Tracking</button>
+        <div class="log">
+            <h3>Log</h3>
+            <pre id="log"></pre>
+        </div>
+    </div>
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
